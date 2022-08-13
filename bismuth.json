@@ -379,6 +379,7 @@
                 "meta.brace.square.js",   // ( ... )
                 "meta.brace.round.js",   // [ ... ]
                 //"meta.brace.*.js"   // [ ... ] ( ... )
+                "punctuation.separator.key-value.css",
                 "punctuation.accessor.js"
             ],
             "settings": { "foreground": "#808080" }
@@ -415,7 +416,8 @@
                 "keyword.other.unit"    // (CSS)
             ],
             "settings": {
-                "foreground": "#cccccc"
+                //"foreground": "#cc8888"
+                "foreground": "#eecccc"
             }
         },
         {
@@ -424,7 +426,8 @@
                 "meta.selector.css"
             ],
             "settings": {
-                "foreground": "#CC9999"
+                //"foreground": "#CC9999"
+                "foreground": "#dd8888"
             }
         },
         {
@@ -439,7 +442,8 @@
             "settings": {
                 //"foreground": "#CCBBBB"
                 //"foreground": "#e0d0ff"
-                "foreground": "#aaaaaa"
+                "foreground": "#ddc0c0"
+
             }
         },
         {
