@@ -185,13 +185,18 @@
         { // コメント
             "scope": [
                 "comment",
+                "string.comment"   //?
                 //comment.block.documentation.cs
-                "punctuation.definition.comment",   //?
-                "string.comment",   //?
+            ],
+            "settings": { "foreground": "#00ff00" }
+        },
+        { // コメント区切り文字
+            "scope": [
+                "punctuation.definition.comment",
                 "punctuation.separator.annotation.result.python",
                 "punctuation.separator.annotation.python"
             ],
-            "settings": { "foreground": "#00ff00" }
+            "settings": { "foreground": "#006000" }
         },
         { // <summary>
             "scope": [
