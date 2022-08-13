@@ -295,7 +295,7 @@
 
         {   // 定数
             "scope": "constant",
-            "settings": { "foreground": "#FFFFD0" }
+            "settings": { "foreground": "#FFFFC0" }
         },
         {   // 定数 識別子
             "scope": [
@@ -303,7 +303,7 @@
                 "entity.name.type.enum.cs", // enum (C#)
                 "variable.other.constant.js"
             ],
-            "settings": { "foreground": "#FFFFF0" }
+            "settings": { "foreground": "#FFFFE0" }
         },
         { // 定数 組み込み
             "scope": [
@@ -320,7 +320,7 @@
 
         { // 演算子 記号
             "scope": "keyword.operator",
-            "settings": { "foreground": "#ffdddd" }
+            "settings": { "foreground": "#ffcccc" }
         },
         {   // in とか not (python)
             "scope": [
