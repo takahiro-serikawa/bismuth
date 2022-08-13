@@ -227,13 +227,17 @@
                 "punctuation.definition.char",
                 "storage.type.string.python",   // f文字列 (python) f'...', r'...'
                 "constant.character.format.placeholder.other.python",
-                "punctuation.definition.interpolation" //.begin.cs $" {...} " (C#)
+                "punctuation.definition.interpolation", //.begin.cs $" {...} " (C#)
+                "punctuation.definition.template-expression.begin.js",
+                "punctuation.definition.template-expression.end.js"
             ],
             "settings": { "foreground": "#808080" }
         },
         {   // 文字列
-            "scope": "string.quoted", // " str ",
-            //"settings": { "foreground": "#00ffff" }
+            "scope": [
+                "string.quoted", // " str ",
+                "string.template"
+            ],
             "settings": { "foreground": "#80ffff" }
         },
         {   // エスケープ \n
@@ -342,6 +346,16 @@
             "settings": { "foreground": "#c0ffe0" }
         },
         
+        { // 普通の変数
+            "scope": [
+                "variable.other.object",
+                "variable.other.property",
+                "variable.other.readwrite",
+
+                "entity.name.function.js"
+            ],
+            "settings": { "foreground": "#ffffff" }
+        },
         { // 関数呼出時の引数名 func(arg=value, ...)
             "scope": "variable.parameter.function-call.python",
             "settings": { 
@@ -363,8 +377,9 @@
                 "punctuation.section.angle-brackets.start.template.definition.cpp",
                 "punctuation.section.angle-brackets.end.template.definition.cpp",
                 "meta.brace.square.js",   // ( ... )
-                "meta.brace.round.js"   // [ ... ]
+                "meta.brace.round.js",   // [ ... ]
                 //"meta.brace.*.js"   // [ ... ] ( ... )
+                "punctuation.accessor.js"
             ],
             "settings": { "foreground": "#808080" }
         },
